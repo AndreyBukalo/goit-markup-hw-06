@@ -46,22 +46,46 @@
     <main>
 
         <!-- Герой-->
-        <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-                <button class="close-modal-button" aria-label="Закрыть окно" data-modal-close>
-                <svg  height="30" width="30">
-                    <use href="./images/svg-sprites.svg#close"></use>
-                </svg>
-                </button>
-                
-            </div>
-        </div>
+        
         <section class="hero">
             <div class="container">
                 <h1 class="title">Эффективные решения для вашего бизнеса</h1>
                 <button class="btn" data-modal-open type="button">Заказать услугу</button>
             </div>
         </section>
+
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="close-modal-button" aria-label="Закрыть окно" data-modal-close>
+                    <svg height="30" width="30">
+                        <use href="./images/svg-sprites.svg#close"></use>
+                    </svg>
+                </button>
+              <h2 class="form-header">Оставьте свои данные, мы вам перезвоним</h2>
+                <form class="modal-form" name="modal-form" autocomplete="off" >
+                    <label class="form-field">
+                        <span class="form-label">Имя</span>
+                        <input class="form-input" type="text" name="name">
+                       
+                    </label>
+                    <label class="form-field">
+                    <span class="form-label">Телефон</span>
+                        <input type="tel"  class="form-input" name="tel">
+                       
+                    </label>
+                    <label class="form-field">
+                    <span class="form-label">Почта</span>
+                        <input type="email"  class="form-input"name="email">
+                        
+                    </label>
+                    <label class="form-field">
+                   <span class="form-label">Коментарий</span>
+                    <textarea name="comments"  class="form-input" rows="10"></textarea>
+                    </label>
+                    
+                </form>
+            </div>
+        </div>
 
         <!--Приемущества-->
         <section class="features section ">

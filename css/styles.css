@@ -121,6 +121,32 @@ img {
 .close-modal-button:focus {
   transform: scale(1.25);
 }
+.form-header {
+  margin-top: 40px;
+  margin-bottom: 28px;
+}
+.modal-form {
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.form-field {
+  display: block;
+  position: relative;
+}
+.form-input {
+  margin-bottom: 28px;
+
+  width: 100%;
+}
+
+.form-label {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  /* transform: translateY(-50%); */
+}
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
