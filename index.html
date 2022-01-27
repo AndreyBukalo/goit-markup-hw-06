@@ -57,33 +57,55 @@
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button class="close-modal-button" aria-label="Закрыть окно" data-modal-close>
-                    <svg height="30" width="30">
-                        <use href="./images/svg-sprites.svg#close"></use>
+                    <svg class="close-modal-icon" height="18" width="18">
+                        <use href="./images/svg-sprites.svg#close-black"></use>
                     </svg>
                 </button>
+                
               <h2 class="form-header">Оставьте свои данные, мы вам перезвоним</h2>
-                <form class="modal-form" name="modal-form" autocomplete="off" >
+
+                <form class="form" name="modal-form" autocomplete="off" >
+
                     <label class="form-field">
-                        <span class="form-label">Имя</span>
-                        <input class="form-input" type="text" name="name">
+                     <input class="form-input" type="text" name="username" placeholder=" ">
+                    <span class="form-label">Имя</span>
+                       <svg class="form-icon" width="18" heigth="18"><use href="images/svg-sprites.svg#person-black"></use></svg>
+                        
+                       </label>
+
+                    <label class="form-field">
+                    
+                        <input type="tel"  class="form-input" name="tel" placeholder=" ">
+                        <span class="form-label">Телефон</span>
+                        <svg class="form-icon" width="18" heigth="18">
+                            <use href="images/svg-sprites.svg#phone-black"></use>
+                        </svg>
                        
                     </label>
+
                     <label class="form-field">
-                    <span class="form-label">Телефон</span>
-                        <input type="tel"  class="form-input" name="tel">
-                       
-                    </label>
-                    <label class="form-field">
-                    <span class="form-label">Почта</span>
-                        <input type="email"  class="form-input"name="email">
+                    
+                        <input type="email"  class="form-input"name="email" placeholder=" ">
+                        <span class="form-label">Почта</span>
+                        <svg class="form-icon" width="18" heigth="18">
+                            <use href="images/svg-sprites.svg#email-black"></use>
+                        </svg>
                         
                     </label>
                     <label class="form-field">
-                   <span class="form-label">Коментарий</span>
-                    <textarea name="comments"  class="form-input" rows="10"></textarea>
-                    </label>
+                <span class=comments-label>Коментарий</span>
+                    <textarea name="comments"  class="form-input" rows="10" placeholder="Введите текст"></textarea>
                     
+                    </label>
+                    </form>
+                    <form class="license">
+                    <label class="license-checkbox">
+                        <input type="checkbox" name="license" value="agree" class="checkbox">
+                        <span class="checkbox-icon"> </span>
+                         <span class="check-text">Соглашаюсь с рассылкой и принимаю <a class="check-link"href="">Условия договора</a> </span>
+                    </label>
                 </form>
+               <button class="submit-btn btn" type="submit">Отправить</button>
             </div>
         </div>
 
