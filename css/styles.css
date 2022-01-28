@@ -243,11 +243,14 @@ img {
   border: 2px solid var(--second-text-color);
   border-radius: 4px;
 }
-
+.checkbox:focus-within + .checkbox-icon {
+  border-color: var(--accent);
+}
 .checkbox:checked + .checkbox-icon {
   border-color: transparent;
   background-image: url(../images/full-check.svg);
   background-size: contain;
+  background-position: center;
   background-color: var(--accent);
   background-origin: border-box;
 }
