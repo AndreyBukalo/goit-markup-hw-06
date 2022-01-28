@@ -129,7 +129,7 @@ img {
 .form {
   margin-left: 40px;
   margin-right: 40px;
-  padding:  0px;
+  padding: 0px;
   width: 448px;
 }
 .form-header {
@@ -147,13 +147,13 @@ img {
 .form-field {
   display: block;
   position: relative;
-  }
-  .form-field:not(:nth-child(4)) {
-    margin-bottom: 28px;
-  }
-  .form-field:nth-child(4) {
-    margin-bottom: 20px;
-  }
+}
+.form-field:not(:nth-child(4)) {
+  margin-bottom: 28px;
+}
+.form-field:nth-child(4) {
+  margin-bottom: 20px;
+}
 .form-input {
   width: 100%;
   height: 40px;
@@ -190,6 +190,7 @@ img {
 }
 .form-field:focus-within > .form-label {
   transform: translate(-30px, -38px);
+  color: #2196f3;
 }
 .form-input:not(:placeholder-shown) + .form-label {
   transform: translate(-30px, -38px);
@@ -202,60 +203,62 @@ img {
   resize: none;
   height: 120px;
   padding: 12px 16px;
- 
-  font-size: 12px;
-line-height: calc(14 / 12)
-letter-spacing: 0.01em;
 
-color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
 }
 
-.comments-label{
-  margin-bottom: 4px;
+.comments-label {
+  position: absolute;
+  top: -15px;
+  left: 0;
 
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
 }
+.form-input:focus + .comments-label {
+  color: var(--accent);
+}
 
 .license-checkbox {
-   display: flex;
-   align-items: center;
-   margin-left: 52px;
+  display: flex;
+  align-items: center;
+  margin-left: 52px;
 }
-.checkbox{
-  -webkit-appearance:none;
-      -moz-appearance:none;
-           appearance:none;
- 
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .checkbox-icon {
   display: inline-block;
   width: 16px;
   height: 15px;
-   
+
   margin-right: 8px;
   border: 2px solid var(--second-text-color);
   border-radius: 4px;
-
 }
+
 .checkbox:checked + .checkbox-icon {
   border-color: var(--accent);
   background-image: url(/images/full-check.svg);
   background-size: contain;
   background-color: var(--accent);
   background-origin: border-box;
-
 }
 .check-text {
   width: 425px;
-font-size: 14px;
-line-height:calc(24 / 14);
-letter-spacing: 0.03em;
-color: var(--main-text-color);
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
 }
 .check-link {
-  
   color: var(--accent);
 }
 
@@ -268,17 +271,17 @@ color: var(--main-text-color);
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 40px;
-  
+
   width: 200px;
   height: 50px;
-  
+
   border-radius: 4px;
   color: var(--white);
   background-color: var(--button-color);
 }
 .submit-btn:focus,
 .submit-btn:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -772,15 +775,15 @@ color: var(--main-text-color);
 .subcribe-header {
   display: inline-block;
   margin-bottom: 20px;
- font-weight: 700;
-font-size: 14px;
-line-height: calc(16 / 14);
-letter-spacing: 0.03em;
-text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-color: var(--white);
+  color: var(--white);
 }
-.subscribe-email{
+.subscribe-email {
   width: 358px;
   height: 50px;
   padding: 16px 15px;
@@ -799,12 +802,13 @@ color: var(--white);
 
 .subscribe-email:focus {
   outline: none !important;
-  border: 2px solid rgba(255, 255, 255, 0.3);}
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
 
- .subscribe-btn {
-   position: relative;
+.subscribe-btn {
+  position: relative;
   transition: box-shadow 250ms var(--cubic);
-  
+
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -813,29 +817,28 @@ color: var(--white);
   border-style: none;
   width: 200px;
   height: 50px;
-  
+
   border-radius: 4px;
   color: var(--white);
   background-color: var(--button-color);
 }
 .subscribe-btn:focus,
 .subscribe-btn:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .send-icon {
- position: absolute;
- top:50%;
- left:148px;
- right: 28px;
+  position: absolute;
+  top: 50%;
+  left: 148px;
+  right: 28px;
 }
 .send-icon {
- transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .subs-btn-text {
   padding-left: 29px;
   padding-right: 62px;
-
 }
 /* Страница Портфолио */
 
