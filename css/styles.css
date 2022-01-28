@@ -260,6 +260,7 @@ color: var(--main-text-color);
 }
 
 .submit-btn {
+  transition: box-shadow 250ms var(--cubic);
   display: block;
   font-weight: 700;
   font-size: 16px;
@@ -270,10 +271,14 @@ color: var(--main-text-color);
   
   width: 200px;
   height: 50px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
   border-radius: 4px;
   color: var(--white);
   background-color: var(--button-color);
+}
+.submit-btn:focus,
+.submit-btn:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -650,6 +655,9 @@ color: var(--main-text-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-join {
+  margin-right: 93px;
+}
 .join-text {
   margin-bottom: 20px;
 
@@ -755,7 +763,80 @@ color: var(--main-text-color);
 .footer .mail:focus {
   color: var(--accent);
 }
+.subcribe-footer {
+  display: block;
+}
+.subscribe-label {
+  display: block;
+}
+.subcribe-header {
+  display: inline-block;
+  margin-bottom: 20px;
+ font-weight: 700;
+font-size: 14px;
+line-height: calc(16 / 14);
+letter-spacing: 0.03em;
+text-transform: uppercase;
 
+color: var(--white);
+}
+.subscribe-email{
+  width: 358px;
+  height: 50px;
+  padding: 16px 15px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--footer-bgc);
+}
+
+.subscribe-email:focus {
+  outline: none !important;
+  border: 2px solid rgba(255, 255, 255, 0.3);}
+
+ .subscribe-btn {
+   position: relative;
+  transition: box-shadow 250ms var(--cubic);
+  
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  margin: 0 auto;
+  cursor: pointer;
+  border-style: none;
+  width: 200px;
+  height: 50px;
+  
+  border-radius: 4px;
+  color: var(--white);
+  background-color: var(--button-color);
+}
+.subscribe-btn:focus,
+.subscribe-btn:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.send-icon {
+ position: absolute;
+ top:50%;
+ left:148px;
+ right: 28px;
+}
+.send-icon {
+ transform: translateY(-50%);
+}
+.subs-btn-text {
+  padding-left: 29px;
+  padding-right: 62px;
+
+}
 /* Страница Портфолио */
 
 .filter-button .btn {
